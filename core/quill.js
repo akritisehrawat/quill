@@ -142,7 +142,7 @@ class Quill {
     let scrollTop = this.scrollingContainer.scrollTop;
     this.selection.focus();
     this.scrollingContainer.scrollTop = scrollTop;
-    this.scrollIntoView();
+    // this.scrollIntoView();
   }
 
   format(name, value, source = Emitter.sources.API) {
@@ -296,7 +296,7 @@ class Quill {
   }
 
   scrollIntoView() {
-    this.selection.scrollIntoView(this.scrollingContainer);
+    // this.selection.scrollIntoView(this.scrollingContainer);
   }
 
   setContents(delta, source = Emitter.sources.API) {
@@ -322,7 +322,7 @@ class Quill {
       [index, length, , source] = overload(index, length, source);
       this.selection.setRange(new Range(index, length), source);
       if (source !== Emitter.sources.SILENT) {
-        this.selection.scrollIntoView(this.scrollingContainer);
+        // this.selection.scrollIntoView(this.scrollingContainer);
       }
     }
   }
