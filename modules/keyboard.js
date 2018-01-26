@@ -227,7 +227,7 @@ Keyboard.DEFAULTS = {
                                .retain(1, { list: 'unchecked' });
         this.quill.updateContents(delta, Quill.sources.USER);
         this.quill.setSelection(range.index + 1, Quill.sources.SILENT);
-        this.quill.scrollIntoView();
+        // this.quill.scrollIntoView();
       }
     },
     'header enter': {
@@ -243,7 +243,7 @@ Keyboard.DEFAULTS = {
                                .retain(1, { header: null });
         this.quill.updateContents(delta, Quill.sources.USER);
         this.quill.setSelection(range.index + 1, Quill.sources.SILENT);
-        this.quill.scrollIntoView();
+        // this.quill.scrollIntoView();
       }
     },
     'list autofill': {
